@@ -34,7 +34,7 @@ config = context.config
 
 config.set_main_option(
     "sqlalchemy.url",
-    DATABASE_URL,
+    DATABASE_URL.render_as_string(hide_password=False),
 )
 
 
