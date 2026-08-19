@@ -53,10 +53,10 @@ function Settings() {
       </div>
 
       {/* Content */}
-      <div className="grid grid-cols-12 gap-6">
+      <div className="grid grid-cols-1 gap-6 lg:grid-cols-12">
 
         {/* Left Menu */}
-        <div className="col-span-3">
+        <div className="lg:col-span-3 min-w-0">
           <SettingsMenu
             activeTab={activeTab}
             setActiveTab={setActiveTab}
@@ -64,7 +64,7 @@ function Settings() {
         </div>
 
         {/* Right Content */}
-        <div className="col-span-9">
+        <div className="lg:col-span-9 min-w-0">
           {renderContent()}
         </div>
 

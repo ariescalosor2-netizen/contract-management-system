@@ -99,7 +99,7 @@ function ContractDetailsModal({
               Basic Information
             </h3>
 
-            <div className="grid grid-cols-2 gap-x-6 gap-y-4">
+            <div className="grid grid-cols-1 gap-x-6 gap-y-4 sm:grid-cols-2">
 
               <div>
                 <p className="text-xs text-gray-500 mb-1">
@@ -167,7 +167,7 @@ function ContractDetailsModal({
               Contract Period
             </h3>
 
-            <div className="grid grid-cols-2 gap-6">
+            <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
 
               <div>
                 <p className="text-xs text-gray-500 mb-1">
@@ -243,7 +243,7 @@ function ContractDetailsModal({
               Record Information
             </h3>
 
-            <div className="grid grid-cols-2 gap-4">
+            <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
 
               <div>
                 <p className="text-xs text-gray-500 mb-1">

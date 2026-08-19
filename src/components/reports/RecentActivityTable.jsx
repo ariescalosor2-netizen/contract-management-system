@@ -10,7 +10,8 @@ function RecentActivityTable() {
         <p className="text-sm text-gray-500 mt-1">Latest contract-related activities.</p>
       </div>
 
-      <table className="w-full">
+      <div className="overflow-x-auto">
+        <table className="w-full min-w-[650px]">
         <thead className="bg-gray-50 border-b">
           <tr className="text-left text-gray-600 text-sm">
             <th className="px-6 py-4">Activity</th>
@@ -39,9 +40,10 @@ function RecentActivityTable() {
             </tr>
           ))}
         </tbody>
-      </table>
+        </table>
+      </div>
 
-      <div className="flex items-center justify-between px-6 py-4 text-sm text-gray-500">
+      <div className="flex flex-col gap-3 px-6 py-4 text-sm text-gray-500 sm:flex-row sm:items-center sm:justify-between">
         <span>
           Showing 1 to {recentActivities.length} of {recentActivities.length} activities
         </span>

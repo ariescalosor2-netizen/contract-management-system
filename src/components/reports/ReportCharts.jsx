@@ -21,7 +21,7 @@ function ReportCharts() {
   return (
     <>
       {/* Top Charts */}
-      <div className="grid grid-cols-3 gap-6 mb-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-6">
         {/* Line Chart */}
         <div className="col-span-2 bg-white rounded-xl border border-gray-200 shadow-sm p-6">
           <h2 className="text-lg font-semibold mb-4">Monthly Contracts</h2>

@@ -22,13 +22,13 @@ function MainLayout({ children }) {
       />
 
       {/* Main Content */}
-      <div className="flex-1 ml-0 lg:ml-60">
+      <div className="flex-1 min-w-0 ml-0 lg:ml-60">
         
         <Topbar
           onMenuClick={toggleSidebar}
         />
 
-        <main className="p-4 sm:p-6">
+        <main className="min-w-0 p-4 sm:p-6">
           {children}
         </main>
 

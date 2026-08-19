@@ -250,11 +250,11 @@ function Renewals() {
       <div className="w-full min-w-0 max-w-full">
 
         {/* HEADER */}
-        <div className="mb-8 flex items-center justify-between gap-4">
+        <div className="mb-8 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
 
           <div className="min-w-0">
 
-            <h1 className="text-3xl font-bold text-slate-800">
+            <h1 className="text-2xl font-bold text-slate-800 sm:text-3xl">
               Renewals
             </h1>
 

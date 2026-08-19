@@ -17,7 +17,8 @@ function AmendmentsTable() {
 
   return (
     <div className="bg-white rounded-xl border border-gray-200 shadow-sm overflow-hidden">
-      <table className="w-full">
+      <div className="overflow-x-auto">
+        <table className="w-full min-w-[900px]">
         <thead className="bg-gray-50 border-b">
           <tr className="text-left text-gray-600 text-sm">
             <th className="px-6 py-4">Amendment No.</th>
@@ -66,10 +67,11 @@ function AmendmentsTable() {
             </tr>
           ))}
         </tbody>
-      </table>
+        </table>
+      </div>
 
       {/* Footer */}
-      <div className="flex items-center justify-between px-6 py-4 text-sm text-gray-500">
+      <div className="flex flex-col gap-3 px-6 py-4 text-sm text-gray-500 sm:flex-row sm:items-center sm:justify-between">
         <span>
           Showing 1 to {amendments.length} of {amendments.length} amendments
         </span>

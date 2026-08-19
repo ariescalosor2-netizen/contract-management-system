@@ -39,7 +39,7 @@ function SettingsMenu({
   setActiveTab,
 }) {
   return (
-    <div className="bg-white rounded-xl border border-gray-200 shadow-sm overflow-hidden">
+    <div className="flex flex-row overflow-x-auto bg-white rounded-xl border border-gray-200 shadow-sm lg:flex-col lg:overflow-hidden">
 
       {menus.map((menu) => (
         <button
@@ -48,9 +48,9 @@ function SettingsMenu({
           onClick={() =>
             setActiveTab(menu.label)
           }
-          className={`w-full flex items-center gap-3 px-5 py-4 text-left transition ${
+          className={`shrink-0 whitespace-nowrap flex items-center gap-3 px-5 py-4 text-left transition lg:w-full ${
             activeTab === menu.label
-              ? "bg-blue-50 text-blue-600 font-semibold border-l-4 border-blue-600"
+              ? "bg-blue-50 text-blue-600 font-semibold border-b-4 border-blue-600 lg:border-b-0 lg:border-l-4"
               : "hover:bg-gray-50 text-gray-700"
           }`}
         >

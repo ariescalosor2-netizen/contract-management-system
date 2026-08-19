@@ -1064,7 +1064,7 @@ function Reports() {
               </p>
             </div>
 
-            <div className="grid grid-cols-2 gap-3">
+            <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
               {milestoneBreakdown.map((item) => {
                 const percentage = milestones.length
                   ? Math.round(

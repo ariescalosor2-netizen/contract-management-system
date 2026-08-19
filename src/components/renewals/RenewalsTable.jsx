@@ -72,8 +72,8 @@ function RenewalsTable({ renewals }) {
     <>
       {/* TABLE */}
       <div className="renewals-table-container w-full min-w-0 overflow-hidden rounded-xl border border-gray-200 bg-white shadow-sm">
-        <div className="w-full min-w-0 overflow-hidden">
-          <table className="w-full table-fixed">
+        <div className="w-full min-w-0 overflow-x-auto">
+          <table className="w-full min-w-[1050px] table-auto">
             <thead className="border-b bg-gray-50">
               <tr className="text-left text-sm text-gray-600">
                 <th className="w-[11%] px-4 py-4">

@@ -37,7 +37,7 @@ function ApprovalCards() {
   ];
 
   return (
-    <div className="grid grid-cols-4 gap-6 mb-6">
+    <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-6 mb-6">
       {cards.map((card, index) => (
         <div key={index} className="bg-white rounded-xl border border-gray-200 shadow-sm p-6">
           <div className="flex items-center gap-4">
