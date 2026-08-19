@@ -196,11 +196,9 @@ const getAmendmentContractNumber = (
 
 const getRequestedBy = (amendment) => {
   return (
+    amendment?.requester_name ??
     amendment?.requested_by_name ??
     amendment?.requested_by_email ??
-    amendment?.requested_by ??
-    amendment?.created_by_name ??
-    amendment?.created_by_email ??
     "System User"
   );
 };
@@ -1031,7 +1029,10 @@ function Amendments() {
 
         {/* Total */}
 
-        <div className="bg-white border border-gray-200 rounded-xl shadow-sm p-6">
+        <div
+  onClick={() => setStatusFilter("All Status")}
+  className="bg-white border border-gray-200 rounded-xl shadow-sm p-6 cursor-pointer hover:shadow-md transition"
+>
 
           <div className="flex items-center gap-4">
 
@@ -1060,7 +1061,10 @@ function Amendments() {
 
         {/* Approved */}
 
-        <div className="bg-white border border-gray-200 rounded-xl shadow-sm p-6">
+<div
+  onClick={() => setStatusFilter("Approved")}
+  className="bg-white border border-gray-200 rounded-xl shadow-sm p-6 cursor-pointer hover:shadow-md transition"
+>
 
           <div className="flex items-center gap-4">
 
@@ -1080,8 +1084,8 @@ function Amendments() {
               <p className="text-sm text-gray-400 mt-1">
                 Successfully approved
               </p>
+              
             </div>
-
           </div>
 
         </div>
@@ -1089,7 +1093,10 @@ function Amendments() {
 
         {/* Pending */}
 
-        <div className="bg-white border border-gray-200 rounded-xl shadow-sm p-6">
+        <div
+  onClick={() => setStatusFilter("Pending")}
+  className="bg-white border border-gray-200 rounded-xl shadow-sm p-6 cursor-pointer hover:shadow-md transition"
+>
 
           <div className="flex items-center gap-4">
 
@@ -1118,7 +1125,10 @@ function Amendments() {
 
         {/* Rejected */}
 
-        <div className="bg-white border border-gray-200 rounded-xl shadow-sm p-6">
+       <div
+  onClick={() => setStatusFilter("Rejected")}
+  className="bg-white border border-gray-200 rounded-xl shadow-sm p-6 cursor-pointer hover:shadow-md transition"
+>
 
           <div className="flex items-center gap-4">
 
