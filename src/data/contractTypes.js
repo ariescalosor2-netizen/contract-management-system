@@ -1,0 +1,60 @@
+const contractTypes = [
+  {
+    id: 1,
+    icon: '📦',
+    name: 'Goods',
+    description: 'Purchase of goods and equipment',
+    status: 'Active',
+    created: 'Jan 10, 2026',
+  },
+  {
+    id: 2,
+    icon: '🛠️',
+    name: 'Services',
+    description: 'Service-related contracts',
+    status: 'Active',
+    created: 'Jan 10, 2026',
+  },
+  {
+    id: 3,
+    icon: '🏢',
+    name: 'Maintenance',
+    description: 'Maintenance and support services',
+    status: 'Active',
+    created: 'Jan 10, 2026',
+  },
+  {
+    id: 4,
+    icon: '👨‍💼',
+    name: 'Consulting',
+    description: 'Consulting and professional services',
+    status: 'Active',
+    created: 'Jan 10, 2026',
+  },
+  {
+    id: 5,
+    icon: '🤝',
+    name: 'Partnership',
+    description: 'Partnership or collaboration agreements',
+    status: 'Inactive',
+    created: 'Jan 09, 2026',
+  },
+  {
+    id: 6,
+    icon: '📄',
+    name: 'Lease',
+    description: 'Lease or rental agreements',
+    status: 'Active',
+    created: 'Jan 08, 2026',
+  },
+  {
+    id: 7,
+    icon: '🛡️',
+    name: 'Other',
+    description: 'Other types of contracts',
+    status: 'Active',
+    created: 'Jan 08, 2026',
+  },
+];
+
+export default contractTypes;
